@@ -2,6 +2,9 @@
 
 This repository contains a demo-ready FastAPI MVP for an intelligent learning assistant that adapts content based on user pace and understanding.
 
+
+
+
 ## Overview
 The system demonstrates an adaptive learning loop:
 1. A user starts learning a concept
@@ -9,7 +12,13 @@ The system demonstrates an adaptive learning loop:
 3. The user submits responses and feedback
 4. The system adapts the next step accordingly
 
-## Deployment
+## Deployment, Cloud-Native Deployment
+
+This service is deployed on **Google Cloud Run** as a stateless FastAPI application.
+- Automatically scales with request load
+- Emits structured logs consumable by Google Cloud Logging
+- Exposes health and runtime metadata endpoints
+- Does not store local state between requests
 - Designed as a stateless FastAPI application
 - Deployed on Google Cloud Run for managed scalability and availability
 - No local state is required; each request is handled independently
