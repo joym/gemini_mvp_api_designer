@@ -1,4 +1,30 @@
-Create an intelligent assistant that helps users learn new concepts effectively.
-The system should personalize content and adapt to user pace and understanding.
+Design a clear, demo-ready REST API for an intelligent learning assistant with observable adaptation.
 
-Design a minimal, demo-ready REST API for this system.
+The system helps users learn concepts through an explicit adaptive learning loop:
+1. A user begins learning a concept.
+2. The system delivers a learning step (explanation, example, or quiz).
+3. The user submits a response and self-feedback.
+4. The system adapts the next step based on pace, accuracy, and confidence.
+
+The API MUST make personalization and adaptation observable via its data models and responses.
+Examples:
+- Explicit pace or difficulty fields
+- Clear signals showing why content adapts
+- Response fields indicating the next learning step and adjustment reason
+
+The API must make learning intelligence explicit through:
+- tracked performance signals (accuracy, attempts, response time, confidence)
+- a clear learning state (difficulty, pace, mastery level)
+- visible adaptation decisions with reasons
+
+Each learning step response must clearly show:
+- what the next step is
+- how it differs from the previous step
+- why the system chose it
+
+Keep the system MVP-focused and implementable.
+Avoid full LMS features, analytics dashboards, or content management systems.
+Focus on making adaptive learning behavior obvious and inspectable.
+Constraints:
+- Keep the system small and implementable within a FastAPI MVP.
+- Do NOT include ML training pipelines or internal AI logic.

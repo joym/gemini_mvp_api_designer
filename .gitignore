@@ -1,20 +1,26 @@
-# Embedded Python / large binaries
-python-*.zip
-py/
-get-pip.py
-
-# Local artifacts
-.cache/
-outputs/
-
-# Python
+# Python cache / build
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-# Secrets
+# Virtual environment / embedded python
+py/
+python-*.zip
+get-pip.py
+
+# Test cache
+.pytest_cache/
+
+# Environment / secrets
 .env
 
 # OS / IDE
 .vscode/
+.idea/
 .DS_Store
 Thumbs.db
+
+# Local outputs / caches
+.cache/
+outputs/

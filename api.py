@@ -60,6 +60,15 @@ def now_utc() -> datetime:
 # -----------------------------
 # Health
 # -----------------------------
+@app.get("/")
+def root():
+    return {
+        "service": "Intelligent Assistant API",
+        "status": "running",
+        "docs": "/docs",
+        "health": "/health"
+    }
+
 @app.get("/health")
 def health():
     return {"status": "ok", "time": now_utc().isoformat()}
