@@ -1,0 +1,20 @@
+# Embedded Python / large binaries
+python-*.zip
+py/
+get-pip.py
+
+# Local artifacts
+.cache/
+outputs/
+
+# Python
+__pycache__/
+*.pyc
+
+# Secrets
+.env
+
+# OS / IDE
+.vscode/
+.DS_Store
+Thumbs.db
