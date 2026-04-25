@@ -1,0 +1,4 @@
+Create an intelligent assistant that helps users learn new concepts effectively.
+The system should personalize content and adapt to user pace and understanding.
+
+Design a minimal, demo-ready REST API for this system.
